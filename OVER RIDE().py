@@ -1,0 +1,11 @@
+class A:
+    classvar1="THIS IS THE VARIABLE IN \"CLASS A\""
+    def __init__(self):
+        self.var1="WE ARE INSIDE CONSTRUCTOR OF CLASS A"
+        self.classvar1="THIS IS INSTANTANEOUS VARIABLE IN A"
+class B(A):
+    pass
+    #classvar2="THIS IS THE VARIABLE IN \"CLASS B\""
+a=A()#() ARE NECESSARY TO GET ACESS TO THE CONSTRUCTOR.
+b=B()
+print(b.classvar1)#FIRST OF ALL IT WILL SEARCH FOR INSTANCE VARIABLE&THAN IT WILL GO FOR VARIABLE.
